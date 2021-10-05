@@ -16,56 +16,59 @@ require_once __DIR__ . '/models/Movie.php';
 </head>
 
 <body>
-    <!-- Movie n.1 -->
-    <section id="movie-1">
-        <div class="description">
-            <h1><?= $movie_1->title ?></h1>
-            <address><strong>Directed by:</strong> <?= $movie_1->director ?></address>
-            <span><strong>Genres:</strong> <?= $movie_1->genres ?>; </span>
-            <p><?= $movie_1->plot ?></p>
-        </div>
-        <figure>
-            <img src="<?= $movie_1->cover ?>" alt="<?= $movie_1->title ?>">
-        </figure>
-    </section>
-    <!-- Movie n.2 -->
-    <section id="movie-2">
-        <div class="description">
-            <h1><?= $movie_2->title ?></h2>
-                <address><strong>Directed by:</strong> <?= $movie_2->director ?></address>
+    <header>
+        <h1 class="text-center">MOVIES</h1>
+    </header>
+    <main class="container">
+        <!-- Movie n.1 -->
+        <section id="movie-1" class="movie">
+            <figure>
+                <a href="#"><img src="<?= $movie_1->cover ?>" alt="<?= $movie_1->title ?>"></a>
+            </figure>
+            <div class="description">
+                <h2><?= $movie_1->title ?></h2>
+                <address><strong class="font-normal">Directed by:</strong> <?= $movie_1->director ?>;</address>
+                <span><strong>Genres:</strong> <?= $movie_1->genres ?>; </span>
+                <p><?= $movie_1->plot ?></p>
+            </div>
+        </section>
+        <!-- Movie n.2 -->
+        <section id="movie-2" class="movie">
+            <figure>
+                <a href="#"><img src="<?= $movie_2->cover ?>" alt="<?= $movie_2->title ?>"></a>
+            </figure>
+            <div class="description">
+                <h2><?= $movie_2->title ?></h2>
+                <address><strong class="font-normal">Directed by:</strong> <?= $movie_2->director ?>;</address>
                 <span><strong>Genres:</strong> <?= $movie_2->genres ?>; </span>
                 <p><?= $movie_2->plot ?></p>
-        </div>
-        <figure>
-            <img src="<?= $movie_2->cover ?>" alt="<?= $movie_2->title ?>">
-        </figure>
-    </section>
-    <!-- Movie n.3 -->
-    <section id="movie-3">
-        <div class="description">
-            <h1><?= $movie_3->title ?></h3>
-                <address><strong>Directed by:</strong> <?= $movie_3->director ?></address>
+            </div>
+        </section>
+        <!-- Movie n.3 -->
+        <section id="movie-3" class="movie">
+            <figure>
+                <a href="#"><img src="<?= $movie_3->cover ?>" alt="<?= $movie_3->title ?>"></a>
+            </figure>
+            <div class="description">
+                <h2><?= $movie_3->title ?></h2>
+                <address><strong class="font-normal">Directed by:</strong> <?= $movie_3->director ?>;</address>
                 <span><strong>Genres:</strong> <?= $movie_3->genres ?>; </span>
                 <p><?= $movie_3->plot ?></p>
-        </div>
-        <figure>
-            <img src="<?= $movie_3->cover ?>" alt="<?= $movie_3->title ?>">
-        </figure>
-    </section>
-    <!-- Movie n.4 -->
-    <section id="movie-4">
-        <div class="description">
-            <h1><?= $movie_4->title ?></h4>
-                <address><strong>Directed by:</strong> <?= $movie_4->director ?></address>
+            </div>
+        </section>
+        <!-- Movie n.4 -->
+        <section id="movie-4" class="movie">
+            <figure>
+                <a href="#"><img src="<?= $movie_4->cover ?>" alt="<?= $movie_4->title ?>"></a>
+            </figure>
+            <div class="description">
+                <h2><?= $movie_4->title ?></h2>
+                <address><strong class="font-normal">Directed by:</strong> <?= $movie_4->director ?>;</address>
                 <span><strong>Genres:</strong> <?= $movie_4->genres ?>; </span>
                 <p><?= $movie_4->plot ?></p>
-        </div>
-        <figure>
-            <img src="<?= $movie_4->cover ?>" alt="<?= $movie_4->title ?>">
-        </figure>
-    </section>
-
-
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

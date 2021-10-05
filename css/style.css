@@ -1,0 +1,31 @@
+/** Utility */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.text-center {
+    text-align: center;
+}
+.font-normal {
+    font-style: normal;
+}
+/** Generals */
+img {
+    width: auto;
+    max-height: 300px;
+}
+.movie {
+    display: flex;
+    margin-top: 20px;
+    background-color:whitesmoke;
+    padding-right: 40px;
+}
+h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+p {
+    text-align: justify;
+}
+
+
