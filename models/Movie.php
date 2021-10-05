@@ -41,7 +41,14 @@ var_dump($movie_1);
 
 //// Instance n.2
 $movie_2 = new Movie(2, 'Inception', 'Action, science-fiction, thriller, adventure', 'Christopher Nolan');
-$plot_2 = 'Inception/Sinossi del film Dom Cobb possiede una qualifica speciale: è in grado di inserirsi nei sogni altrui per prelevare i segreti nascosti nel più profondo del subconscio. Viene contattato da Saito, un potentissimo industriale giapponese.';
+$plot_2 = 'Dom Cobb possiede una qualifica speciale: è in grado di inserirsi nei sogni altrui per prelevare i segreti nascosti nel più profondo del subconscio. Viene contattato da Saito, un potentissimo industriale giapponese.';
 
 $movie_2->getPlot($plot_2);
 var_dump($movie_2);
+
+//// Instance n.3
+$movie_3 = new Movie(3, 'In Time', 'Action, science-fiction, thriller', 'Andrew Niccol');
+$plot_3 = 'In un futuro non troppo lontano, il gene dell\'invecchiamento è stato isolato e sconfitto. Per evitare la sovrappopolazione, il tempo è diventato la moneta con cui la gente paga per acquistare i beni.';
+
+$movie_3->getPlot($plot_3);
+var_dump($movie_3);
