@@ -52,3 +52,10 @@ $plot_3 = 'In un futuro non troppo lontano, il gene dell\'invecchiamento è stat
 
 $movie_3->getPlot($plot_3);
 var_dump($movie_3);
+
+//// Instance n.4
+$movie_4 = new Movie(4, 'After Earth', 'Science-fiction, action, adventure', 'M. Night Shyamalan');
+$plot_4 = 'Un ranger e suo figlio, provenienti dal pianeta Nova Prime, sono in viaggio con la loro navicella quando vengono costretti ad un atterraggio d\'emergenza sulla Terra, diventata un luogo selvaggio dominato da strane creature.';
+
+$movie_4->getPlot($plot_4);
+var_dump($movie_4);
