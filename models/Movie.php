@@ -29,7 +29,7 @@ class Movie
  * @param int $_id;
  * @param string $_title;
  * @param string $_genres;
- * @param string $_director;
+ * @param string $_director; 
  */
 
 //// Instance n.1
@@ -38,3 +38,10 @@ $plot_1 = 'Durante una nuova era glaciale causata da un esperimento fallito, un 
 
 $movie_1->getPlot($plot_1);
 var_dump($movie_1);
+
+//// Instance n.2
+$movie_2 = new Movie(2, 'Inception', 'Action, science-fiction, thriller, adventure', 'Christopher Nolan');
+$plot_2 = 'Inception/Sinossi del film Dom Cobb possiede una qualifica speciale: è in grado di inserirsi nei sogni altrui per prelevare i segreti nascosti nel più profondo del subconscio. Viene contattato da Saito, un potentissimo industriale giapponese.';
+
+$movie_2->getPlot($plot_2);
+var_dump($movie_2);
